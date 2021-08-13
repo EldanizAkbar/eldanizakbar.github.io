@@ -1,3 +1,6 @@
+  
+  //menu items activator
+  
   let navLi=this.document.querySelectorAll(".a");
   let sections = document.querySelectorAll("section");
   window.addEventListener("scroll", () => {
@@ -26,52 +29,7 @@
 
 
 
-
-
-
-
-// const navLi = document.querySelectorAll("nav .container ul li");
-// window.addEventListener("scroll", () => {
-//   let current = "";
-//   sections.forEach((section) => {
-//     const sectionTop = section.offsetTop;
-//     const sectionHeight = section.clientHeight;
-//     if (pageYOffset >= sectionTop - sectionHeight / 3) {
-//       current = section.getAttribute("id");
-//     }
-//   });
-
-//   navLi.forEach((li) => {
-//     li.classList.remove("active");
-//     if (li.classList.contains(current)) {
-//       li.classList.add("active");
-//     }
-//   });
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// nav menu sticky maker
 
 window.addEventListener("scroll", function(){
 
@@ -91,7 +49,7 @@ window.addEventListener("scroll", function(){
 
 });
 
-
+// automatic text changer
 
 async function init () {
 const node = document.querySelector("#type-text")
@@ -109,11 +67,6 @@ await sleep(3000)
 await node.delete('Mentor')
 }
 }
-
-
-
-
-
 
 const sleep = time => new Promise(resolve => setTimeout(resolve, time))
 
@@ -147,12 +100,11 @@ await sleep(this.typeInterval)
 
 customElements.define('type-async', TypeAsync, { extends: 'span' })
 
-
 init()
 
 
 
-
+// testimonials slider
 
 $(document).ready(function(){
   $("#testimonial-slider").owlCarousel({
@@ -166,28 +118,6 @@ $(document).ready(function(){
       autoPlay:true
   });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
