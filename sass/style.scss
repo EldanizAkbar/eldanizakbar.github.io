@@ -1,0 +1,435 @@
+// Basic config
+@import 'base/variables';
+@import 'base/reset';
+@import 'base/spacing';
+@import 'base/grid';
+
+html{
+    scroll-behavior: smooth;
+}
+
+.anime{
+    font-family: $f-family-main;
+    font-size: $f-size-main;
+    font-weight: $f-weight-main;
+}
+
+
+.blinking-cursor{
+  user-select: none;
+  animation: blink 1s steps(2, start) infinite;
+  
+  @keyframes blink{
+    to{
+      visibility: hidden;
+    }}
+}
+.nav-item{
+    a{
+        color: $c-secondary-main;
+        transition-duration: 0.3s;
+        font-family: $f-family-main;
+        
+    }
+    a:hover{
+        color: $c-primary-dark;
+    }
+}
+
+.actives{
+        color: #00B187 !important;
+        border-bottom: 2px solid $c-primary-main;
+}
+.navbar{
+    transition-duration: 0.3s;
+}
+.collapse{
+    transition-duration: 0.3s;
+}
+
+.margin{
+    margin-top: -20px;
+}
+
+.container-fluid{
+    background-color: white;
+}
+
+.main-intro{
+    font-family: $f-family-main;
+    font-size: $f-size-main;
+    font-weight: $f-weight-main;
+}
+
+.primary-intro{
+    font-family: $f-family-secondary;
+    font-size: $f-size-primary;
+    font-weight: $f-weight-primary;
+    color: $c-secondary-light;
+}
+
+.menu{
+    transition-duration: 0.5s;
+    background-color: #F8F8F8;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.about-section{
+    background-color: $c-primary-dark;
+}
+
+.hello{
+    color: white;
+    font-family: $f-family-main;
+    font-size: $f-size-fourth;
+}
+.about-text{
+    color: white;
+    font-family: $f-family-primary;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.skill{
+    background-color: white;
+}
+
+.front-end{
+    color: black;
+    font-size: $f-size-success;
+    font-family: $f-family-main;
+}
+.about-front{
+    color: black;
+    font-size: 15px;
+    font-family: $f-family-primary;
+    line-height: 1.7;
+
+}
+
+
+
+
+
+.speak{
+    color: #00B187;
+    font-size: $f-size-third;
+    font-family: $f-family-main;
+}
+
+.skills{
+    color: black;
+    font-size: 15px;
+    font-family: $f-family-primary;
+    line-height: 1.7;
+}
+.tools{
+    color: #00B187;
+    font-size: $f-size-third;
+    font-family: $f-family-main;
+
+  
+}
+ul{
+    li{
+        margin-top: 8px;
+        color: black;
+        font-size: 15px;
+        font-family: $f-family-primary;
+        line-height: 1.7;
+
+}
+  }
+
+
+  .icons{
+      height: 70px;
+  }
+
+
+.education{
+    background-color: white;
+}
+.educ-text{
+    color: black;
+    font-size: $f-size-success;
+    font-family: $f-family-main;
+}
+
+.time{
+    color: $c-primary-main;
+    font-size: 20px;
+    font-family: $f-family-main;
+
+}
+
+.university{
+    color: black;
+    font-size: $f-size-success;
+    font-family: $f-family-main;
+    text-transform: capitalize;
+    transition-duration: 0.2s;
+}
+.university:hover{
+    color: #00B187;
+    cursor: pointer;
+}
+.specialty{
+    color: black;
+    font-size: 17px;
+    font-family: $f-family-main;
+}
+
+.recent{
+    font-family: $f-family-main;
+    font-size: $f-size-sixth;
+    font-weight: $f-weight-main;
+}
+
+.sub-recent{
+    color: black;
+    font-size: 18px;
+    font-family: $f-family-secondary;
+    line-height: 1.7;
+
+    a{
+        color: $c-primary-main;
+        font-weight: $f-weight-success;
+    }
+
+    a:hover{
+        color: $c-primary-main;
+        font-weight: $f-weight-success;
+
+    }
+}
+
+.work{
+    height: 250px;
+    border-radius: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+    overflow: hidden;
+    position: relative;  
+}
+.project-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition-duration: 1s;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.2);
+    top: 0;
+    left: 0;
+}
+
+.hoba{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,177,135, 0.8);
+    position: absolute;
+    transition-duration: 0.5s;
+    top: 0;
+    left: 0;
+    opacity: 0 ;
+}
+.work:hover{
+     .project-img{
+    transform: scale(1.5,1.5);
+       }
+}
+.work:hover .hoba{
+    opacity: 1;
+}
+
+.project-name{
+    color: white;
+    font-size: 18px;
+    font-family: $f-family-main;
+    line-height: 1.7;
+}
+
+.info{
+    color: white;
+    font-size: 18px;
+    font-family: $f-family-main;
+    line-height: 1.7;
+    border-width: 2px;
+    border-color: #00E4AE;
+}
+.info:hover{
+    color: white;
+    border-color: #00E4AE;
+    background-color: #00E4AE;
+
+}
+
+.more{
+    color: #05c296;
+    font-size: 18px;
+    font-family: $f-family-main;
+    line-height: 1.7;
+    border-width: 2px;
+    border-color: #05c296;
+}
+.more:hover{
+    color: white;
+    border-color: #05c296;
+    background-color: #05c296;
+
+}
+
+
+::-webkit-scrollbar {
+    width: 6px;
+   border-left: 1px solid #E6ECF8;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+ background: white; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+ background: #008a67;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+ background: #008a67; 
+}
+
+.title{
+    color: black;
+    font-size: 25px;
+    font-family: $f-family-main;
+    line-height: 1.7;
+}
+.subtitle{
+    color: black;
+    font-size: 18px;
+    font-family: $f-family-primary;
+    line-height: 1.7;
+}
+
+.testimonialss{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    font-weight: bolder;
+
+}
+
+
+
+
+
+.testimonial{
+    text-align: center;
+    padding: 0 20px;
+    height: auto;
+}
+
+.testimonial .description{
+    font-family: $f-family-primary;
+    font-size: 18px;
+    color: black;
+    line-height: 1.6;
+}
+.testimonial .pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px auto;
+}
+.testimonial .pic img{
+    width: 100%;
+    height: auto;
+}
+.testimonial .testimonial-title{
+    font-family: $f-family-main;
+    font-size: 20px;
+    font-weight: bold;
+    color: #474740;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.testimonial .post{
+    font-family: $f-family-primary;
+    display: block;
+    font-size: 14px;
+}
+
+.owl-theme .owl-controls .owl-page span{
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border: 2px solid #00C896;
+    opacity: 1;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls .owl-page span:hover{
+    background: #00C896;
+    border: 2px solid #00C896;
+}
+
+.foot{
+    background-color: $c-primary-dark;
+}
+
+
+
+
+
+.facebook {
+    color: white;
+    border: 1px solid white;
+    transform: scale(1.5,1.5);
+    padding: 10px 14px;
+    border-radius: 50%;
+    transition: background 0.3s ease-in-out;
+ 
+}
+
+.facebook:hover {
+    background: white;
+    color: $c-primary-dark;
+    cursor: pointer;
+}
+
+
+.facebook1{
+    color: white;
+    border: 1px solid white;
+    transform: scale(1.5,1.5);
+    padding: 10px 12px;
+    border-radius: 50%;
+    transition: background 0.3s ease-in-out;
+ 
+}
+
+.facebook1:hover {
+    background: white;
+    color: $c-primary-dark;
+    cursor: pointer;
+}
+
+
+.good{
+    color: white;
+    font-family: $f-family-primary;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+*::selection{
+    background-color: #00C896;
+    color: white;
+}
+

@@ -1,0 +1,138 @@
+
+@media (max-width: 393.98px) {
+    .collapse{
+        text-align: center !important;
+
+       .nav-item{
+           padding-top: 20px !important;
+       }
+    }
+    .anime{
+        font-size: 18px !important;
+    }
+    
+    .primary-intro{
+       font-size: 8px !important;
+    }
+    .university{
+        font-size: 19px !important;
+    }
+    
+   
+   
+}
+
+@media (max-width: 575.98px) {
+    .collapse{
+        text-align: center !important;
+
+       .nav-item{
+           padding-top: 20px !important;
+       }
+    }
+    .anime{
+        font-size: $f-size-sixth !important;
+    }
+    
+    .primary-intro{
+       font-size: $f-size-seventh !important;
+    }
+    .hello{
+        font-size: $f-size-primary !important;
+    }
+    .about-text{
+        font-size: $f-size-seventh !important;
+    }
+   
+}
+
+
+@media (min-width: 576px) {
+    .collapse{
+        text-align: center !important;
+
+       .nav-item{
+           padding-top: 20px !important;
+       }
+    }
+    .anime{
+        font-size: $f-size-sixth !important;
+    }
+    
+    .primary-intro{
+       font-size: $f-size-seventh !important;
+    }
+    .hello{
+        font-size: $f-size-primary !important;
+    }
+    .about-text{
+        font-size: $f-size-seventh !important;
+    }
+    .university{
+        font-size: 20px !important;
+    }
+   
+
+}
+
+@media (min-width: 768px) {
+    .anime{
+        font-size: $f-size-secondary !important;
+    }
+    
+    .primary-intro{
+        font-size: $f-size-light !important;
+    }
+    .hello{
+        font-size: $f-size-primary !important;
+    }
+    .about-text{
+        font-size: $f-size-seventh !important;
+    }
+   
+   
+}
+
+@media (min-width: 992px) {
+    .anime{
+        font-size: $f-size-main !important;
+    }
+    
+    .primary-intro{
+        font-size: $f-size-primary !important;
+    }
+    .hello{
+        font-size: $f-size-sixth !important;
+    }
+    .about-text{
+        font-size: $f-size-seventh !important;
+    }
+    .university{
+        font-size: $f-size-success !important;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .hello{
+        font-size: $f-size-sixth !important;
+    }
+    .about-text{
+        font-size: $f-size-seventh !important;
+    }
+
+
+}
+
+@media (min-width: 1400px) {
+    .hello{
+        font-size: $f-size-fourth !important;
+    }
+    .about-text{
+        font-size: $f-size-third !important;
+    }
+    .work{
+        width: 28%;
+    }
+
+}
