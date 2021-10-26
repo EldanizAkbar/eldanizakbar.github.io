@@ -14,7 +14,7 @@
     });
     navLi.forEach((a) => {
       a.classList.remove("actives");
-      if($(window).scrollTop() + $(window).height() > $(document).height()) {
+      if($(window).scrollTop() + $(window).height() >= $(document).height()) {
         a.classList.remove("actives");
         if(a.classList.contains("contact")) {
           a.classList.add("actives");
